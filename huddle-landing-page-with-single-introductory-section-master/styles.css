@@ -1,0 +1,145 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  max-width: 50%;
+}
+.back-ground-image {
+  position: absolute;
+}
+
+.bg-mobile {
+  display: none;
+}
+.logo {
+  position: relative;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+.illustration-image {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 50px;
+  height: 65%;
+}
+.build {
+  font-size: 45px;
+  margin-left: 100px;
+  margin-top: 50px;
+  color: #ffff;
+  font-weight: 600;
+}
+p {
+  font-size: 23px;
+  font-weight: 200;
+  color: #ffffffbe;
+}
+button {
+  width: 220px;
+  height: 50px;
+  border-radius: 23px;
+  border-color: none;
+  font-size: 18px;
+  color: hsl(257, 40%, 49%);
+  border: none;
+}
+.icon-image {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-top: 600px;
+  margin-left: 1300px;
+  justify-content: space-between;
+  color: white;
+}
+/* 
+@media (max-width: 430px) {
+  .main {
+    max-width: none;
+    width: 400px;
+  }
+  .bg-desktop {
+    display: none;
+  }
+  .illustration-pic {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 23px;
+  border-color: none;
+  font-size: 14px;
+  padding: 1rem;
+  color: hsl(257, 40%, 49%);
+  border: none;
+} */
+@media screen and (max-width: 768px) {
+  .main {
+    max-width: 100%; /* Make it full-width for small screens */
+  }
+
+  .back-ground-image {
+    position: relative; /* Remove 'absolute' for mobile */
+  }
+
+  .bg-desktop {
+    display: none; /* Hide desktop background on mobile */
+  }
+
+  .bg-mobile {
+    display: block; /* Show mobile background on mobile */
+  }
+
+  .logo {
+    margin-top: 15px; /* Adjust margin for mobile */
+    margin-left: 100px;
+    bottom: 400px;
+  }
+
+  .illustration-image {
+    margin-top: 0px; /* Adjust margin for mobile */
+    margin-left: 120px;
+    bottom: 100px;
+    width: 100px;
+    height: auto; /* Let the height adjust automatically */
+  }
+
+  .build {
+    font-size: 25px; /* Reduce font size for mobile */
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 18px; /* Reduce font size for mobile */
+  }
+
+  button {
+    width: 100%; /* Make the button full-width for mobile */
+  }
+
+  .icon-image {
+    /* width: auto; Allow icons to resize based on content */
+    margin: 20px 0; /* Adjust margin for mobile */
+  }
+
+  .icon-image img {
+    margin-left: 10px; /* Reduce the margin between icons */
+  }
+}
